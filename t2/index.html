@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+  <title>Company    Directory Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Company Directory Portal</h1>
+    <hr>
+
+    <h2>Employee Registration Form</h2>
+    <form>
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required><br><br>
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" required><br><br>
+
+      <label for="department">Department:</label>
+      <select id="department" name="department" required>
+        <option value="IT" selected>IT</option>
+        <option value="HR">HR</option>
+        <option value="Finance">Finance</option>
+        <option value="Marketing">Marketing</option>
+        <option value="Sales">Sales</option>
+      </select>
+      <br><br>
+      
+
+      <label  for="employeeID">Employee ID:</label>
+      <input type="text" id="employeeID" name="employeeID" required><br><br>
+
+      <label  for="profilePicture">Profile Picture:</label>
+      <input type="file" id="profilePicture" name="profilePicture"><br><br>
+
+      <button type="submit">Register</button>
+    </form> 
+    <div class="employee">
+      <h2>Employee List</h2>
+      <ul class="employee-list">
+        <li><span class="serial-number">.</span> John Doe - john@gmail.com</li>
+        <li><span class="serial-number">.</span> Jane Smith - jane@example.com</li>
+      </ul>
+    </div>
+  
+    <div class="details">
+    <h2>Employee Details</h2>
+    <div class="employee-details">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Employee ID</th>
+            <th>Department</th>
+            <th>Profile Picture</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John Doe</td>
+            <td>12345</td>
+            <td>IT</td>
+            <td><img src="profile.jpg" alt="Profile Picture"></td>
+          </tr>
+          <tr>
+            <td>Jane Smith</td>
+            <td>67890</td>
+            <td>HR</td>
+            <td><img src="profile.jpg" alt="Profile Picture"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="location">
+    <h2>Company Location</h2>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3871.7404612525855!2d78.48591313413021!3d17.38589174563435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb47097b585b9d%3A0x330552b8d5967505!2sHyderabad%2C%20Telangana%2C%20India!5e0!3m2!1sen!2sin!4v1693558145489!5m2!1sen!2sin" width="600" height="450" style="border: 0;" allowfullscreen=""></iframe>
+    </div>
+  </div>
+</div>
+</body>
+</html>
